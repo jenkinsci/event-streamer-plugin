@@ -1,6 +1,6 @@
 Jenkins::Plugin::Specification.new do |plugin|
-  plugin.name = "stream-events"
-  plugin.display_name = "Stream Events Plugin"
+  plugin.name = "event-streamer"
+  plugin.display_name = "Event Streamer Plugin"
   plugin.version = '0.0.1'
   plugin.description = 'Adds a command to CLI and SSHD to give a stream of build events, as JSON.'
 
@@ -13,7 +13,7 @@ Jenkins::Plugin::Specification.new do |plugin|
   plugin.developed_by "jtjerno", "Jørgen P. Tjernø <jtjerno@mylookout.com>"
 
   # This specifies where your code is hosted.
-  plugin.uses_repository :github => 'cli-stream-events-plugin'
+  plugin.uses_repository :github => 'event-streamer-plugin'
 
   # This is a required dependency for every ruby plugin.
   plugin.depends_on 'ruby-runtime', '0.7'
